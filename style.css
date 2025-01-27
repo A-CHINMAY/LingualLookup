@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4facfe, #00f2fe, #43e97b, #38f9d7);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container */
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    animation: popIn 0.5s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#word-input {
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-right: none;
+    outline: none;
+}
+
+#search-btn {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#search-btn:hover {
+    background: linear-gradient(45deg, #36d1dc, #1fa2ff);
+    transform: scale(1.05);
+}
+
+/* Results Section */
+.result-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    display: none;
+    color: #333333;
+    animation: fadeIn 0.5s ease-in-out;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#word-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#phonetic {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#definitions,
+#synonyms {
+    margin-top: 15px;
+}
+
+.definition-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #e3f2fd;
+    border-radius: 8px;
+}
+
+.synonyms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.synonym-tag {
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Pop Animation */
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #word-input,
+    #search-btn {
+        font-size: 14px;
+    }
+}
