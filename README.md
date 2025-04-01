@@ -4,21 +4,14 @@ This is a simple Dictionary App built using HTML, CSS, and JavaScript. It allows
 
 Features
 
-  1.Fetch word definitions from an API.
+   1.Fetch word definitions from an API.
 
-  2.Display synonyms in a well-structured manner.
+   2.Display synonyms in a well-structured manner.
 
-  3.Responsive design with a clean UI.
+   3.Responsive design with a clean UI.
 
-  4.JavaScript dynamically updates the UI.
+   4.JavaScript dynamically updates the UI.
 
-
-File Structure
-
-📂 dictionary-app/
-├── 📄 index.html     # Main HTML file
-├── 📄 style.css      # Stylesheet for UI design
-└── 📄 script.js      # JavaScript logic for fetching and displaying data
 
 How to Use
 
@@ -39,9 +32,7 @@ Technologies Used
    JavaScript - Fetching data and updating the UI dynamically.
 
 
-API Used
-
-This app fetches word meanings and synonyms using a dictionary API (e.g., RapidAPI or Free Dictionary API).
+API Used : This app fetches word meanings and synonyms using a dictionary API (e.g., RapidAPI or Free Dictionary API).
 
 Setup Instructions
 
