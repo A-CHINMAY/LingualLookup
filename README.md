@@ -4,13 +4,13 @@ This is a simple Dictionary App built using HTML, CSS, and JavaScript. It allows
 
 Features
 
-Fetch word definitions from an API.
+  1.Fetch word definitions from an API.
 
-Display synonyms in a well-structured manner.
+  2.Display synonyms in a well-structured manner.
 
-Responsive design with a clean UI.
+  3.Responsive design with a clean UI.
 
-JavaScript dynamically updates the UI.
+  4.JavaScript dynamically updates the UI.
 
 
 File Structure
@@ -24,9 +24,7 @@ How to Use
 
 1. Open index.html in a browser.
 
-
 2. Enter a word in the search input.
-
 
 3. The app fetches and displays the definition and synonyms.
 
@@ -34,11 +32,11 @@ How to Use
 
 Technologies Used
 
-HTML - Structure of the webpage.
+   HTML - Structure of the webpage.
 
-CSS - Styling for a clean and modern look.
+   CSS - Styling for a clean and modern look.
 
-JavaScript - Fetching data and updating the UI dynamically.
+   JavaScript - Fetching data and updating the UI dynamically.
 
 
 API Used
@@ -47,14 +45,12 @@ This app fetches word meanings and synonyms using a dictionary API (e.g., RapidA
 
 Setup Instructions
 
-1. Clone the repository:
+  1. Clone the repository:
 
-git clone https://github.com/A-CHINMAY/LingualLookup.git
+    git clone https://github.com/A-CHINMAY/LingualLookup.git
 
+  2. Open the project folder and run index.html in a browser.
 
-2. Open the project folder and run index.html in a browser.
-
-
-3. update script.js with the correct API endpoint.
+  3. update script.js with the correct API endpoint.
 
 
